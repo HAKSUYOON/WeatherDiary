@@ -31,6 +31,10 @@ Spring Boot와 Java를 이용하여 일기 다이어리 (일기 생성, 일기 �
 - DELETE /delete/diary
 - 파라미터 : 삭제할 일기의 날짜 (Ex. yyyy-MM-dd)
 - 성공 응답 : 해당 날짜의 모든 일기 데이터 삭제 (응답은 Void, 바로 DB에서 해당 데이터 삭제)
+### 05. Spring Scheduler 이용
+- Spring Scheduler를 이용하여 매일 1시에 어제의 날씨 데이터를 WeatherData 테이블에 저장
+### 06. logback 이용
+- logback을 이용하여 모든 로그와 에러 로그를 파일로 저장
 ## 구현 시 문제점
 **Spring Boot 3.x 이상의 버전부터 Swagger 이용 시 더 이상 Springfox 지원불가**
 
