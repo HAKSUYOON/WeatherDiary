@@ -52,7 +52,7 @@ public class DiaryController {
     }
 
     @DeleteMapping("/delete/diary")
-    @Operation(summary = "선택한 날짜의 첫번째 일기 데이터를 삭제합니다.")
+    @Operation(summary = "선택한 날짜의 모든 일기 데이터를 삭제합니다.")
     void deleteDiary(@RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
         diaryService.deleteDiary(date);
     }
